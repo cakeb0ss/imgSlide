@@ -27,3 +27,32 @@ canvas {
   vertical-align: center;
   font-size: 8vh;
 }
+
+
+.slider{
+  width: 80px;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+.slider:focus {
+  outline: none;
+}
+
+
+.slider::-webkit-slider-runnable-track {
+  background: rgb(115, 218, 203);
+  height: 80px;
+  -webkit-appearance: none;
+  border-radius: 8px;
+}
+
+.slider::-webkit-slider-thumb {
+  width: 40px;
+  height: 80px;
+  background: white;
+  cursor: grab;
+  -webkit-appearance: none;
+  margin-top: 0;
+  border-radius: 8px;
+}

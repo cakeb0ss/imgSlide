@@ -110,15 +110,24 @@ function setup() {
 
   console.log('xPosList: ', xPosList);
   
-  scrSlider = createSlider(1, 24749, 0);
+  scrSlider = createSlider(1, 17173, 0);
   scrSlider.position(50, y - 150);
   scrSlider.size(x - 100);
+  scrSlider.addClass('slider');
+  let slider = document.querySelector('.slider');
+  
+
 
   var counter = 0;
 
   
   
   drawImages(0);
+  slider.addEventListener('wheel', (ev) => {
+    ev.preventDefault();
+    scrVal = ev.deltaY;
+    console.log('ev.deltaY: ', ev.deltaY);
+  })
   
 }
 
