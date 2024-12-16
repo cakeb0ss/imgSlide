@@ -10,6 +10,8 @@ let gridCellY = y / 2;
 
 ////
 
+var scrVal = 0;
+
 var counter = 0;
 function drawImages(scrVal) {
   let cnv = document.getElementById('main');
@@ -125,8 +127,9 @@ function setup() {
   drawImages(0);
   slider.addEventListener('wheel', (ev) => {
     ev.preventDefault();
-    scrVal = ev.deltaY;
+    scrVal += ev.deltaY * 20;
     console.log('ev.deltaY: ', ev.deltaY);
+    drawImages(scrVal);
   })
   
 }
@@ -146,8 +149,6 @@ function draw() {
   
 
   scrSlider.input(scrollVal);
-  
-  var scrVal = 0;
 
   function scrollVal() {
     let val = scrSlider.value();

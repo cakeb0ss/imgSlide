@@ -33,6 +33,7 @@ canvas {
   width: 80px;
   background-color: transparent;
   -webkit-appearance: none;
+  bottom: 15vh;
 }
 
 .slider:focus {
@@ -41,16 +42,16 @@ canvas {
 
 
 .slider::-webkit-slider-runnable-track {
-  background: rgb(115, 218, 203);
-  height: 80px;
+  background: rgb(86, 86, 86);
+  height: 15vh;
   -webkit-appearance: none;
   border-radius: 8px;
 }
 
 .slider::-webkit-slider-thumb {
   width: 40px;
-  height: 80px;
-  background: white;
+  height: 15vh;
+  background: rgb(175, 203, 202);
   cursor: grab;
   -webkit-appearance: none;
   margin-top: 0;
