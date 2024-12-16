@@ -31,7 +31,7 @@ var imgList = [];
 var imgDict = {};
 
 for (let i = 0; i < 43; i++) {
-  imgList.push(`${i}.png`);
+  imgList.push(`${i}.jpg`);
 }
 
 console.log('imgList: ', imgList);
