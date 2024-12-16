@@ -136,7 +136,7 @@ function draw() {
   
   
 
-  scrSlider.changed(scrollVal);
+  scrSlider.input(scrollVal);
   
   var scrVal = 0;
 
