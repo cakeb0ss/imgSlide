@@ -10,6 +10,23 @@ let gridCellY = y / 2;
 
 ////
 
+var counter = 0;
+function drawImages(scrVal) {
+    // translate(scrVal);
+    for (img in imgDict) {
+    
+    
+    imgX = xPosList[counter];
+
+    eval(
+      `image(imgDict.${img}, imgX, y/5)`
+    );
+
+    counter++;
+
+  }
+  }
+
 var imgList = [];
 var imgDict = {};
 
@@ -97,7 +114,7 @@ function setup() {
 
   
   
-  drawImages();
+  drawImages(0);
 
 }
 
@@ -124,27 +141,12 @@ function draw() {
     scrVal = val;
     console.log('scrVal: ', scrVal);
     
-    drawImages();
+    drawImages(scrVal);
   }
   
 }
 
-var counter = 0;
-function drawImages(scrVal) {
-    translate(scrVal);
-    for (img in imgDict) {
-    
-    
-    imgX = xPosList[counter];
 
-    eval(
-      `image(imgDict.${img}, imgX, y/5)`
-    );
-
-    counter++;
-
-  }
-  }
 
 
 
