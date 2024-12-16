@@ -61,6 +61,8 @@ function setup() {
 
   let wList = [0];
 
+  loadImage(`https://cakeb0ss.github.io/imgSlide/images/33.png`)
+
   for (i in imgDict) {
 
     console.log('imgDict[i]: ', imgDict[i]);
