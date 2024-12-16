@@ -27,7 +27,7 @@ function preload() {
   for (let i = 0; i < 43; i++) {
 
     const imgKey =  `img${i}`;
-    imgDict[imgKey] = loadImage(`/images/${imgList[i]}`);
+    imgDict[imgKey] = loadImage(`imgSlide/images/${imgList[i]}`);
 
   }
 
