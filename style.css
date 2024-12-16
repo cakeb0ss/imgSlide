@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -10,8 +12,18 @@ body {
 #main {
   width: 100%;
   min-height: 100vh;
+  transform: translateX(0);
 }
 
 canvas {
   display: block;
+}
+
+
+.loading {
+  color: white;
+  font-family: 'Jersey 25';
+  text-align: center;
+  vertical-align: center;
+  font-size: 8vh;
 }

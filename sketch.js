@@ -12,7 +12,8 @@ let gridCellY = y / 2;
 
 var counter = 0;
 function drawImages(scrVal) {
-    // translate(scrVal);
+  let cnv = document.getElementById('main');
+  cnv.style.transform = `translateX(-${scrVal}px)`;
     for (img in imgDict) {
     
     
@@ -24,6 +25,10 @@ function drawImages(scrVal) {
 
     counter++;
 
+  }
+
+  if (counter == 43) {
+    document.getElementById("loadText").remove();
   }
   }
 
@@ -61,12 +66,9 @@ function setup() {
 
   let wList = [0];
 
-  loadImage(`https://cakeb0ss.github.io/imgSlide/images/33.png`)
-
   for (i in imgDict) {
 
     console.log('imgDict[i]: ', imgDict[i]);
-    // console.log('imgDict[i].width: ', imgDict[i].width);
     imgDict[i].resize(0, gridCellY);
     wList.push(imgDict[i].width);
 
@@ -117,7 +119,7 @@ function setup() {
   
   
   drawImages(0);
-
+  
 }
 
 
@@ -142,10 +144,8 @@ function draw() {
     let val = scrSlider.value();
     scrVal = val;
     console.log('scrVal: ', scrVal);
-    
     drawImages(scrVal);
   }
-  
 }
 
 
