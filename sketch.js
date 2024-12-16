@@ -27,7 +27,7 @@ function preload() {
   for (let i = 0; i < 43; i++) {
 
     const imgKey =  `img${i}`;
-    imgDict[imgKey] = loadImage(`imgSlide/images/${imgList[i]}`);
+    imgDict[imgKey] = loadImage(`raw.githubusercontent.com/cakeb0ss/imgSlide/refs/heads/main/images/${imgList[i]}`);
 
   }
 
